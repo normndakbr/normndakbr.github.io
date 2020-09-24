@@ -26,10 +26,10 @@ li a:hover {
 body, html {
     height: 100%;
 }
-/* 
+
 * {
     box-sizing: border-box;
-} */
+}
 
 .backgroundimage {
     /* The image used */
@@ -44,10 +44,20 @@ body, html {
 
 .backgroundimage #image{
     filter: blur(8px);
+    z-index: -100;
 
 }
 
-/* Add styles to the form container */
+.title h1{
+    left: 20;
+    top: 0;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    color: goldenrod;
+    z-index: 50;
+}
+
 .container {
     position: absolute;
     bottom: 0;
@@ -87,8 +97,9 @@ input[type=text]:focus, input[type=password]:focus {
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 30%;
     opacity: 0.9;
+    border-radius: 10px;
 }
 
 .btn:hover {
